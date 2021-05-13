@@ -1,0 +1,38 @@
+#!/bin/bash
+
+START=$(date +%s)
+scp -i ~/.ssh/exoscale.pem data-20-200/* ubuntu@194.182.187.41:~/CODA/Traffic-sign-classification-microservices/1framing/frame-200
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+#date +"%s.%3N" &&  \
+
+START=$(date +%s)
+scp -i ~/.ssh/exoscale.pem data-20-1500/* ubuntu@194.182.187.41:~/CODA/Traffic-sign-classification-microservices/1framing/frame-1500
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+scp -i ~/.ssh/exoscale.pem data-20-3000/* ubuntu@194.182.187.41:~/CODA/Traffic-sign-classification-microservices/1framing/frame-3000
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+scp -i ~/.ssh/exoscale.pem data-20-6500/* ubuntu@194.182.187.41:~/CODA/Traffic-sign-classification-microservices/1framing/frame-6500
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+scp -i ~/.ssh/exoscale.pem data-20-20000/* ubuntu@194.182.187.41:~/CODA/Traffic-sign-classification-microservices/1framing/frame-20000
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+exit

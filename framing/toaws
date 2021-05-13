@@ -1,0 +1,43 @@
+#!/bin/bash
+
+START=$(date +%s)
+#mkdir frame-200
+scp -i ~/.ssh/t2xlarge.pem data-20-200/* ubuntu@ec2-3-81-63-123.compute-1.amazonaws.com:~/frame-200
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+#date +"%s.%3N" &&  \
+
+START=$(date +%s)
+#mkdir frame-1500
+scp -i ~/.ssh/t2xlarge.pem data-20-1500/* ubuntu@ec2-3-81-63-123.compute-1.amazonaws.com:~/frame-1500
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+#mkdir frame-3000
+scp -i ~/.ssh/t2xlarge.pem data-20-3000/* ubuntu@ec2-3-81-63-123.compute-1.amazonaws.com:~/frame-3000
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+#mkdir frame-6500
+scp -i ~/.ssh/t2xlarge.pem data-20-6500/* ubuntu@ec2-3-81-63-123.compute-1.amazonaws.com:~/frame-6500
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+#mkdir frame-20000
+scp -i ~/.ssh/t2xlarge.pem data-20-20000/* ubuntu@ec2-3-81-63-123.compute-1.amazonaws.com:~/frame-20000
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+exit

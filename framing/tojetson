@@ -1,0 +1,38 @@
+#!/bin/bash
+
+START=$(date +%s)
+scp -i ~/.ssh/authorized_keys2 data-20-200/* pi@143.205.122.164:~/Documents/matching/Traffic-Sign-Classifier/FromLenovo/frame-200
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+#date +"%s.%3N" &&  \
+
+START=$(date +%s)
+scp -i ~/.ssh/authorized_keys2 data-20-1500/* pi@143.205.122.164:~/Documents/matching/Traffic-Sign-Classifier/FromLenovo/frame-1500
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+scp -i ~/.ssh/authorized_keys2 data-20-3000/* pi@143.205.122.164:~/Documents/matching/Traffic-Sign-Classifier/FromLenovo/frame-3000
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+scp -i ~/.ssh/authorized_keys2 data-20-6500/* pi@143.205.122.164:~/Documents/matching/Traffic-Sign-Classifier/FromLenovo/frame-6500
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+
+START=$(date +%s)
+scp -i ~/.ssh/authorized_keys2 data-20-20000/* pi@143.205.122.164:~/Documents/matching/Traffic-Sign-Classifier/FromLenovo/frame-20000
+END=$(date +%s)
+#t1=$(date '+%s%N' --date="$1")
+DIFF=$(( $END - $START ))
+echo "It took $DIFF seconds"
+exit
