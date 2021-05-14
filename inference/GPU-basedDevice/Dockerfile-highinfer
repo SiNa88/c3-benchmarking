@@ -1,0 +1,18 @@
+FROM nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf2.3-py3
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y python3-opencv
+RUN pip3 install -U matplotlib tqdm #opencv-python
+
+# Set the working directory
+WORKDIR /work
+
+# Add the data
+ADD traffic_sign_seq_highaccuracy.h5 /work
+ADD frame203.jpg /work
+
+# Add python-script
+COPY Traffic_sign_classification-checkpoint-highinference.py /work
+
+ENTRYPOINT ["python3", "Traffic_sign_classification-checkpoint-highinference.py"]
