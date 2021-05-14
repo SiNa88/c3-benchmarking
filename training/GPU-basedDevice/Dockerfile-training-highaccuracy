@@ -12,7 +12,7 @@ RUN pip3 install -U pandas matplotlib tqdm #opencv-python # scikit-learn tqdm te
 WORKDIR /work
 
 # Add the data
-ADD data.zip /work
+ADD https://www.itec.aau.at/~narges/data.zip /work
 RUN unzip data.zip
 
 # Add python-script
