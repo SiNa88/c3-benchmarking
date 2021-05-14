@@ -1,0 +1,21 @@
+#FROM ubuntu
+FROM nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf2.3-py3
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y unzip python3-opencv #python3 python3-pip  python3-opencv
+#RUN pip3 install numpy scipy  matplotlib 
+RUN pip3 install -U pandas matplotlib tqdm #opencv-python # scikit-learn tqdm opencv-python pandas  #tensorflow keras
+
+
+# Set the working directory
+WORKDIR /work
+
+# Add the data
+ADD data.zip /work
+RUN unzip data.zip
+
+# Add python-script
+COPY Traffic_sign_classification-checkpoint-lowaccuracy.py /work
+
+ENTRYPOINT ["python3", "Traffic_sign_classification-checkpoint-lowaccuracy.py"]
