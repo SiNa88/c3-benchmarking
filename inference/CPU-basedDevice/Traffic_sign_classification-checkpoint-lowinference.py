@@ -25,7 +25,7 @@ model.compile(optimizer=tf.train.AdamOptimizer(),
 			metrics=['accuracy'])
 '''
 model.summary()
-file_name = "frame203.jpg"#"frame206.jpg"#"Train/0/00000_00004_00029.png"
+file_name = "frame206.jpg"#"frame203.jpg"#"Train/0/00000_00004_00029.png"
 IMG_SIZE = 32
 img_array = cv2.imread(file_name ,cv2.IMREAD_GRAYSCALE)  
 new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE), interpolation = cv2.INTER_AREA)
