@@ -16,9 +16,9 @@ Exoscale Edge-Cloud: 		          4vCPU, Mem: 8GB
 
 Exoscale Edge-Cloud:              2vCPU, Mem: 4GB
 
-High performance gateway          12 CPUs, Mem: 32GB
+Edge gateway:                     12 CPUs, Mem: 32GB
 
-Lenovo PC:			       		        8 CPUs, Mem: 16GB
+Edge device:			       		      8 CPUs, Mem: 16GB
 
 Nvidia Jetson Nano				        4 CPUs, Mem: 4GB
 
