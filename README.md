@@ -20,8 +20,8 @@ High performance Edge gateway:    12 CPUs, Mem: 32GB
 
 Edge device:			       		      8 CPUs, Mem: 16GB
 
-Nvidia Jetson Nano				        4 CPUs, Mem: 4GB
+Nvidia Jetson Nano:				        4 CPUs, Mem: 4GB
 
-RPi4    	  							        4 CPUs, Mem: 4GB
+RPi4:    	  							        4 CPUs, Mem: 4GB
 
-RPi3  	  	  						        4 CPUs, Mem: 1GB
+RPi3:  	  	  						        4 CPUs, Mem: 1GB
