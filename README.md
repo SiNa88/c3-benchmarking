@@ -16,7 +16,7 @@ Exoscale Edge-Cloud: 		          4vCPU, Mem: 8GB
 
 Exoscale Edge-Cloud:              2vCPU, Mem: 4GB
 
-Edge gateway:                     12 CPUs, Mem: 32GB
+High performance Edge gateway:    12 CPUs, Mem: 32GB
 
 Edge device:			       		      8 CPUs, Mem: 16GB
 
