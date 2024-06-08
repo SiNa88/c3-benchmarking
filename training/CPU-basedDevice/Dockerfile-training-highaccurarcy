@@ -9,7 +9,7 @@ RUN pip3 install scikit-learn numpy tqdm tensorflow keras matplotlib opencv-pyth
 WORKDIR /work
 
 # Add the data
-ADD https://www.itec.aau.at/~narges/data.zip /work
+ADD https://zenodo.org/records/11526387/files/data.zip?download=1 /work
 RUN unzip data.zip
 
 # Add python-script
